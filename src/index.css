@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,54 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+ul{
+  list-style: none;
+}
+
+.row{
+  justify-content: space-between;
+  display: flex;
+}
+
+.col{
+  /* display: flex; */
+}
+
+.container{
+  justify-content: center;
+  background-color: red;
+  /* margin: 0em 5em; */
+}
+
+.header-container{
+  padding: 0em 2em;
+  /* display: flex; */
+}
+
+.header-logo{
+  /* flex-basis: 25%; */
+}
+
+.main-menu{
+  display: flex;
+  align-items: center;
+}
+
+.main-menu-btn{
+  font-size: 1.2em;
+  text-transform: uppercase;
+  padding: 0em 1em;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.menu-dropdown{
+  position: absolute;
+  /* top: 100%; */
+}
+
+.secondary-menu{
+  display: flex;
+  align-items: center;
 }
