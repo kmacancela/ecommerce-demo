@@ -6,7 +6,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 // import MenuItem from 'react-bootstrap/MenuItem'
-import Main from './Main';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -24,8 +23,8 @@ const Home = () => {
             <Row>
                 <img className="header-logo" src="/img/belgian-boys-logo.jpg" width="100" height="100" />
                 <div className="main-menu">
-                    <Nav className="main-menu-btn">
-                        <Navbar.Collapse id="basic-navbar-nav">
+                    <div className="navbar main-menu-btn">
+                        {/* <div id="navbar-collapse basic-navbar-nav"> */}
                             <NavDropdown 
                                 className="menu-dropdown"
                                 title="Shop"
@@ -40,8 +39,8 @@ const Home = () => {
                                 <NavDropdown.Item href="#four">Breakfast</NavDropdown.Item>
                                 <NavDropdown.Item href="#five">Dessert</NavDropdown.Item>
                             </NavDropdown>
-                        </Navbar.Collapse>
-                    </Nav>
+                        {/* </div> */}
+                    </div>
                     <div className="main-menu-btn">Bundles <AiOutlineDown /></div>
                     <div className="main-menu-btn">About Us <AiOutlineDown /></div>
                     <div className="main-menu-btn">Let's Have Fun <AiOutlineDown /></div>
